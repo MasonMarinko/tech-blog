@@ -10,9 +10,12 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
     secret: 'Super secret secret',
-    cookie: {},
-    resave: false,
-    saveUninitialized: true,
+    cookie: {
+        expires: 30 * 1000
+    },
+    resave: true,
+    rolling: true,
+    saveUninitialized: false,
     store: new SequelizeStore({
         db: sequelize
     })
@@ -36,6 +39,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 // turn on connection to db and server
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now Listening'));
 });

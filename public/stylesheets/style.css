@@ -38,6 +38,28 @@
   margin-left: 0;
 }
 
+.date-created {
+  font-size: 15px;
+}
+
+.text {
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.comment-text {
+  font-size: 30px;
+}
+
+.posted_by {
+  font-size: 25px;
+}
+
+.add-comment {
+  height: 75px;
+  width: 200px;
+}
+
 .usernamepw {
   width: 300px;
 }
@@ -294,6 +316,7 @@ textarea:focus, input:focus {
 textarea {
   min-width: 40%;
   min-height: 100px;
+  font-size: 20px;
 }
 
 form > div {
@@ -400,6 +423,10 @@ input.break {
   height: 80px;
 }
 
+.testing-123 {
+  font-size: 5000px;
+}
+
 .upvote-btn {
   background-color: #197d0f;
   transition: background-color .1s;
@@ -417,22 +444,20 @@ input.break {
 }
 
 .comment-form {
+  display: flex;
+  justify-content: center;
   margin-bottom: 5%;
-}
-
-.comment {
-  padding: 1%;
-  margin-bottom: 1%;
 }
 
 .comment:nth-child(odd) {
   background-color: #fff5eb;
+  align-items: center;
 }
 
 .comment .meta {
   font-size: 90%;
-  margin-bottom: .5%;
   opacity: .6;
+  padding-top: 20px;
 }
 
 .new-post-form input {

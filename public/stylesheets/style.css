@@ -8,12 +8,8 @@
 	--heading-height: 20em;
 }
 
-main {
-  padding-top: 200px;
-}
-
 .headline {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	height: var(--heading-height);
 }
@@ -37,6 +33,22 @@ main {
 	border-bottom: .2em solid #fff;
 }
 
+li {
+  list-style: none;
+}
+
+ol {
+  max-width: 100%;
+  align-items: center;
+}
+
+.dashboard {
+  font-size: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
 
 * {
   box-sizing: border-box;
@@ -50,10 +62,15 @@ body, html {
   color: #333;
 }
 
+article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 a {
-  margin-right: 30px;
+  margin-right: 27px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   color: #225ca3;
   font-weight: bold;
   transition: color .1s;
@@ -63,12 +80,44 @@ a:hover {
   color: #3486eb;
 }
 
+h2 {
+  font-size: 25px;
+}
+
+.dashboard-text {
+  width: 100%;
+}
+
+.body-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  width: 100%;
+  font-size: 50px;
+  transition: color .1s;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-post {
+  line-height: 150%;
+  align-items: center;
+  font-size: 22px;
+  max-height: 1000px;
+  max-width: 1200px;
+  word-wrap: break-word;
+}
+
 .title {
+  display: flex;
+  padding-bottom: 20px;
+  width: 100%;
   text-decoration: none;
   font-size: 50px;
   color: #225ca3;
   font-weight: bold;
   transition: color .1s;
+  justify-content: space-around;
 }
 
 button {
@@ -80,6 +129,10 @@ button {
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.flex {
+  display: flex;
 }
 
 button:hover {
@@ -132,6 +185,7 @@ nav {
 }
 
 p {
+  font-size: 15px;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -186,13 +240,31 @@ header h1 {
 }
 
 .edit-link {
+  font-size: 20px;
   display: block;
   margin: -1.5% 0 2% 0;
+}
+
+.title-box {
+  display: flex;
+}
+
+input.break {
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
 }
 
 .upvote-btn {
   background-color: #197d0f;
   transition: background-color .1s;
+}
+
+.post-title {
+  display: flex;
+  word-wrap: break-word;
+  height: 100px;
+  width: 630px;
 }
 
 .upvote-btn:hover {

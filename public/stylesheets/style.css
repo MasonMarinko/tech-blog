@@ -33,17 +33,108 @@
 	border-bottom: .2em solid #fff;
 }
 
+#logout {
+  font-size: 30px;
+  margin-left: 0;
+}
+
+.usernamepw {
+  width: 300px;
+}
+
+#username-login {
+  height: 50px;
+  width: 250px;
+  font-size: 17px;
+}
+
+#username-signup {
+  height: 50px;
+  width: 250px;
+  font-size: 17px;
+}
+
+#password-login {
+  height: 50px;
+  width: 250px;
+  font-size: 17px;
+}
+
+#password-signup {
+  height: 50px;
+  width: 250px;
+  font-size: 17px;
+}
+
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.specific-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#login {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.orKey {
+  width: 100%;
+  font-size: 60px;
+}
+
+#signup-2 {
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
+}
+
+#signup {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 li {
   list-style: none;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-decoration: underline;
+  margin-bottom: 125px;
 }
 
 ol {
   max-width: 100%;
   align-items: center;
-}
-
-.dashboard {
-  font-size: 20px;
 }
 
 main {
@@ -52,6 +143,10 @@ main {
 
 * {
   box-sizing: border-box;
+}
+
+.entire-box {
+  display: flex;
 }
 
 body, html {
@@ -65,6 +160,24 @@ body, html {
 article {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.save-delete-buttons {
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+.wrap-box {
+  width: 100%;
+}
+
+.date-post {
+  padding-left: 40px;
+}
+
+.center-items {
+  width: 100%;
 }
 
 a {
@@ -74,6 +187,10 @@ a {
   color: #225ca3;
   font-weight: bold;
   transition: color .1s;
+}
+
+.posted-date {
+  font-size: 18px;
 }
 
 a:hover {
@@ -91,7 +208,6 @@ h2 {
 .body-main {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 20px;
   width: 100%;
   font-size: 50px;
   transition: color .1s;
@@ -100,30 +216,50 @@ h2 {
 }
 
 .main-post {
+  background-color: blanchedalmond;
   line-height: 150%;
   align-items: center;
   font-size: 22px;
-  max-height: 1000px;
-  max-width: 1200px;
+  min-height: 150px;
+  width: 1200px;
   word-wrap: break-word;
 }
 
-.title {
+.title-top {
   display: flex;
   padding-bottom: 20px;
-  width: 100%;
-  text-decoration: none;
-  font-size: 50px;
+  height: 60px;
+  font-size: 70px;
   color: #225ca3;
   font-weight: bold;
   transition: color .1s;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.title {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  height: 75px;
+  text-decoration: none;
+  font-size: 70px;
+  color: #225ca3;
+  font-weight: bold;
+  transition: color .1s;
+  justify-content: space-between;
+}
+
+.save-delete-buttons {
+  display: flex;
 }
 
 button {
   background-color: #225ca3;
   border: 0;
-  padding: 1%;
+  padding: 5%;
   color: white;
   font-weight: bold;
   transition: background-color .1s;
@@ -201,6 +337,14 @@ header h1 {
   margin: 0px;
 }
 
+.post-titles {
+  font-size: 30px;
+}
+
+.btn {
+  font-size: 30px;
+}
+
 
 .btn-no-style {
   background: none;
@@ -240,9 +384,10 @@ header h1 {
 }
 
 .edit-link {
-  font-size: 20px;
-  display: block;
-  margin: -1.5% 0 2% 0;
+  width: 100%;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
 }
 
 .title-box {
@@ -261,7 +406,7 @@ input.break {
 }
 
 .post-title {
-  display: flex;
+  font-size: 20px;
   word-wrap: break-word;
   height: 100px;
   width: 630px;
@@ -300,8 +445,11 @@ input.break {
 
 footer {
   border-top: 1px solid #ccc;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
   display: flex;
   justify-content: center;
   padding: 1%;
-  font-size: 110%;
+  font-size: 30px;
 }

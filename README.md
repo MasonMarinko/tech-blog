@@ -1,15 +1,13 @@
-# tech-blog
-
-# readme-generator ![MIT Badge](https://img.shields.io/badge/License-MIT-brightgreen)
+# tech-blog ![ISC Badge](https://img.shields.io/badge/License-ISC-brightgreen)
 
 ## Links
 
-Repository Link: https://github.com/masonmarinko/readme-generator
+Repository Link: https://github.com/masonmarinko/tech-blog
 
-Live URL Link: https://masonmarinko.github.io/readme-generator
+Live URL Link: https://sleepy-headland-65703.herokuapp.com/
 
 ## Description
-- Using the command prompt the user will answer a series of questions. Once all the questions have concluded the user will be presented with a professional README in the form of the markdown file. It will be located in the "Output" folder, this file can then be cut, copied, and/or pasted in a different location. If another questionaire is started and finished it will overwrite the previous README file.
+- This app allows you to do many things
 
 ## Table of Contents
 * [Installation](#installation)
@@ -17,35 +15,50 @@ Live URL Link: https://masonmarinko.github.io/readme-generator
 * [License](#license)
 * [Questions](#questions)
 
-## Video Demo
-[Readme Generator Demo](https://youtu.be/Rhb7cylB70U "Readme Generator Demo")
 
 ## Installation
-1) Download repository
+(For USE)
+1. Download repository
 
-2) Once downloaded open command prompt and add the "Inquirer" through npm by typing "npm install inquirer".
+2. Create mysql database app is setup for one named "tech_blog"
 
-3) Once completed and ready to start ensure you are in the readme-generator/Develop folder.
+4. Use "npm start" to start server, at which point you can open with (localhost:3001) by default. You can then use the app openly.
 
-4) You can then type "node index" in the command prompt to begin your README creation.
+(For Viewing)
 
-## Usage (After Installation)
+1. Visit website https://sleepy-headland-65703.herokuapp.com/
 
-![image](./Develop/assets/filepath.jpg)
-1) Before beginning make sure you are inside of the Developer folder.
+2. Have fun!
 
-![image](./Develop/assets/node_index.jpg)
-2) Once inside the correct folder start the questionaire with "node index"
+## Usage/Features (After Installation)
 
-![image](./Develop/assets/questions.jpg)
-3) Next you will answer a series of questions after which a professional README will be made and put in the "Output" folder. At this point you can cut, copy, and/or view your README.
+![image](./readme_screenshots/main_page.png)
+1) Once you get to the original website you can always navigate the site with the buttons at the top which will change dynamically based on if you're logged in or out.
 
-(Be advised, if README isn't moved to another folder before another README is created, the previous README will be overwritten)
+![image](./readme_screenshots/login_signup_page.png)
+2) Once you select login, you can either login or select signup. If you select signup you get re routed to make an account.
 
+![image](./readme_screenshots/logged_in_create_post.png)
+3) Once you login or signup you will then go to your "dashboard" and greeted with the ability to create a blog post.
+
+![image](./readme_screenshots/posted_message.png)
+4) Once you make a post it shows up on your dashboard, above it is edit along with the article name so the user knows which article, if many, the edit button goes too.
+
+![image](./readme_screenshots/edit_post.png)
+![image](./readme_screenshots/updated_post.png)
+5) Once you select to edit a post you are met with this sceeen, where the previous text will show up and be completely editable. You can also delete the post if you would like. Also tells the user the original date it was posted.
+
+![image](./readme_screenshots/home_page.png)
+6) If the user selects home they are met with posts by other users, along with how many comments have been put on a post. The posts also show the title, date posted, who posted, and a body.
+
+![image](./readme_screenshots/comment_made.png)
+7) If the user clicks on comments they can not only see comments made, by who, what date and the body, but they can also add their own. Like Twitter, once you post a comment you cannot delete it.
+
+8) If the user is inactive on the site for 30 minutes or longer they will be automatically logged out.
 
 ## License
 This project is covered under the following license(s):
-MIT
+ISC
 
 ## Questions
 

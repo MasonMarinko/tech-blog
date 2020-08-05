@@ -7,7 +7,7 @@ Repository Link: https://github.com/masonmarinko/tech-blog
 Live URL Link: https://sleepy-headland-65703.herokuapp.com/
 
 ## Description
-- This app allows you to do many things
+- This app allows you to post your own personal blog, edit and delete posts, comment on other's posts as well as see other people's posts. It auto logs out someone if inactive, for security.
 
 ## Table of Contents
 * [Installation](#installation)

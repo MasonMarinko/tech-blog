@@ -1,15 +1,11 @@
 {
   "name": "tech-blog",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.18.1",
-    "npm": "6.14.5"
-  },
-  "description": "Repository Link: https://github.com/masonmarinko/tech-blog.git",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -31,5 +27,7 @@
     "mysql2": "^2.1.0",
     "sequelize": "^6.3.3"
   },
-  "heroku-run-build-script": true
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }

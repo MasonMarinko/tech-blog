@@ -1,7 +1,7 @@
 {
   "name": "tech-blog",
   "version": "1.0.0",
-  "description": "Repository Link: https://github.com/masonmarinko/readme-generator",
+  "description": "Repository Link: https://github.com/masonmarinko/tech-blog.git",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

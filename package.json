@@ -1,11 +1,16 @@
 {
   "name": "tech-blog",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.18.1",
+    "npm": "6.14.5"
+  },
   "description": "Repository Link: https://github.com/masonmarinko/tech-blog.git",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -26,9 +31,6 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.1.0",
     "sequelize": "^6.3.3"
-  },
-  "engines": {
-    "node": "12.18.1"
   },
   "heroku-run-build-script": true
 }
